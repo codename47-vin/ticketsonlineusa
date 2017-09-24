@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#frame{
+  background-color: white;
+  height: 70px;
+  margin: 0 auto;
+  outline: 1px solid #e1e1e1;
+  overflow: hidden;
+}
+
+#logo{
+  font-family: Lato;
+  text-transform: uppercase;
+}
+
+nav{
+  height: 70px;
+  text-align: center;
+}
+
+a{
+  color: #000;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 70px;
+  margin: 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:active,
+a:focus,
+a:hover{
+  color: #39c;
+  outline: 0;
+  transition: color .2s linear;
+}
+
+header #logo{
+  color: #000;
+  display: block;
+  font-size: 35px;
+  font-weight: 900;
+  margin: 0 auto;
+  width: 350px;
+}
+
+#concerts::after,
+#sports::after{
+  background: url(../images/arrow.png) center no-repeat;
+  content: '';
+  display: inline-block;
+  height: 11px;
+  opacity: .4;
+  position: relative;
+  transform: scale(.5);
+  width: 22px;
+}
+
+#concerts:active::after,
+#concerts:hover::after,
+#concerts:focus::after,
+#sports:active::after,
+#sports:hover::after,
+#sports:focus::after{
+  opacity: .7;
+  transform: scale(.55);
+  transition: scale .2s linear, opacity .2s linear;
+}
+
+/*content style*/
+.searchbox input{
+  border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  margin: 20px 0 20px 0;
+  padding: 0 45px ;
+  position: relative;
+  text-transform: uppercase;
+  width: 1000px;
+}
+
+.searchbox input#search::-webkit-input-placeholder{
+  color: #333;
+  filter: alpha(opacity=100);
+  font-size: 14px;
+  opacity: 1;
+  text-transform: none;
+}
+.searchbox input#search::-moz-placeholder{
+  color: #333;
+  filter: alpha(opacity=100);
+  font-size: 14px;
+  opacity: 1;
+  text-transform: none;
+}
+.searchbox input#search:-ms-input-placeholder{
+  color: #333;
+  filter: alpha(opacity=100);
+  font-size: 14px;
+  opacity: 1;
+  text-transform: none;
+}
+.searchbox input#search::placeholder{
+  color: #333;
+  filter: alpha(opacity=100);
+  font-size: 14px;
+  opacity: 1;
+  text-transform: none;
+}
+
+.icon{
+  margin-left: 17px;
+  position: absolute;
+  top: 171px;
+  z-index: 1;
+}
+
+.top_search p,
+.last_five p{
+  color: #000;
+  font-family: Lato;
+  font-size: 23px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.top_search a{
+  border-radius: 3px;
+  border: 1px solid #7489a8;
+  color: #3c95aa;
+  font-size: 14px;
+  font-weight: 400;
+  height: 12px;
+  margin: 0 4px;
+  padding: 5px 10px;
+  width: 65px;
+}
+
+.top_search a:active,
+.top_search a:focus,
+.top_search a:hover{
+  background-color: #7489a8;
+  color: #fff;
+  transition: color .2s linear, background-color .2s linear;
+}
+
+.last_five{
+  display:block;
+}
+p#search-query{
+  color: #111;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.performer{
+  cursor: pointer;
+  display: inline-block;
+  height: 85px;
+  margin: 0 20px 25px 0;
+  width: 210px;
+}
+
+.performer .performer-img {
+  float: left;
+  height: 85px;
+  margin: 0 15px 0 0;
+}
+
+.performer .performer-text {
+    display: table-cell;
+    height: 85px;
+    vertical-align: middle;
+}
+
+.performer .performer-text .performer-name {
+  color: #111;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.performer .performer-text .performer-name:active,
+.performer .performer-text .performer-name:focus,
+.performer .performer-text .performer-name:hover{
+  color: #369;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+footer nav a{
+  margin: 0 4px;
+}
+
+footer #logo{
+  color: #ccc;
+  display: inline;
+  float: left;
+  font-size: 18px;
+  font-weight: 800;
+  height: 15px;
+  width: 177px;
+}
+
+#rights{
+  color: #333;
+  display: inline;
+  float: right;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  height: 12px;
+  margin-top: 25px;
+  width: 260px;
+}

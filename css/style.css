@@ -7,7 +7,7 @@
 
 .wrapper{
   margin: 0 auto;
-  width: 1000px;
+  width: 100%;
 }
 
 #frame{
@@ -20,19 +20,19 @@
 
 #logo{
   font-family: Lato;
+  left: 3rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
   text-transform: uppercase;
-  left: 5em;
-  /*left: 1.25em;*/
-  /*position: absolute;*/
-
   top: 0;
 }
 
 nav{
+  right: 1.25em;*/
   height: 70px;
   position: absolute;
   right: 1.5em;
-  /*right: 1.25em;*/
   top: 0;
   vertical-align: middle;
 }
@@ -56,13 +56,13 @@ a:hover{
   transition: color .2s linear;
 }
 
-header #logo{
+div #logo{
   color: #000;
   display: inline-block;
   font-size: 35px;
-  font-weight: 900;
-  margin: 0 auto;
+  font-weight: 900
   width: 350px;
+
 }
 
 #concerts::after,
@@ -88,17 +88,17 @@ header #logo{
   transition: scale .2s linear, opacity .2s linear;
 }
 
-.clear:before, .clear:after {
-  content:"";
-  display:table
-}
-
+.clear:before,
 .clear:after {
-  clear:both
+   content: "";
+   display: table;
+}
+.clear:after {
+   clear: both;
 }
 
 .clear {
-  zoom:1
+   zoom: 1;
 }
 
 /*content style*/
@@ -253,6 +253,10 @@ footer #logo{
   font-weight: 400;
   height: 12px;
   margin-top: 25px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 1em;
   width: 260px;
+/*left: 5em;*/
 }
->>>>>>> Make landing base
